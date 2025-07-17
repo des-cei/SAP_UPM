@@ -1,0 +1,6 @@
+# Build results #
+################
+
+sw/build
+sw/applications/gpio_fpga/*
+sw/applications/hello_world/*
