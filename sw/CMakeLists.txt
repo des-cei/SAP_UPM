@@ -378,7 +378,8 @@ message( "${Magenta}Linker file: ${LINKER_SCRIPT}${ColourReset}")
 set_target_properties(${MAINFILE}.elf PROPERTIES LINK_DEPENDS "${LINKER_SCRIPT}")
 
 # Linker control
-SET(CMAKE_EXE_LINKER_FLAGS  "-T ${LINKER_SCRIPT}  \
+SET(CMAKE_EXE_LINKER_FLAGS  "-N \
+                             -T ${LINKER_SCRIPT}  \
                             ${INCLUDE_FOLDERS} \
                              -static ${LINKED_FILES} \
                              -Wl,-Map=${MAINFILE}.map \
